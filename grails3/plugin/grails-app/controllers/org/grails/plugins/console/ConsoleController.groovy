@@ -1,8 +1,10 @@
 package org.grails.plugins.console
 
 import grails.converters.JSON
+import grails.transaction.Transactional
 import org.apache.commons.io.FilenameUtils
 
+@Transactional
 class ConsoleController {
 
     def consoleService
